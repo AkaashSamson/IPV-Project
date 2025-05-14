@@ -1,0 +1,33 @@
+2025-05-13 22:59:49,123 - INFO - [app.py:45] - Upload directory created/verified at: static/uploads
+2025-05-13 22:59:49,128 - INFO - [app.py:238] - Starting GrabCut Flask application
+2025-05-13 22:59:49,208 - INFO - [_internal.py:96] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-13 22:59:49,208 - INFO - [_internal.py:96] - [33mPress CTRL+C to quit[0m
+2025-05-13 22:59:49,219 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:18:38,901 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:20:59,403 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:21:04,113 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:28:13,712 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:28:19,198 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:28:25,885 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:28:45,466 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:28:57,925 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:29:24,577 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:30:53,805 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:31:00,786 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:31:17,521 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:33:11,928 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:33:20,554 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:34:16,489 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:34:37,753 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:34:43,879 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:34:53,782 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:37:54,795 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:37:58,284 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:38:06,215 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:47:13,100 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:49:44,501 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:50:00,178 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:50:59,285 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:51:10,248 - INFO - [_internal.py:96] -  * Restarting with stat
+2025-05-13 23:51:26,945 - INFO - [_internal.py:96] -  * Restarting with stat

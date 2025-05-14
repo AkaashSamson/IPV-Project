@@ -1,0 +1,102 @@
+2025-05-13 23:18:52,473 - INFO - [app.py:45] - Upload directory created/verified at: static/uploads
+2025-05-13 23:18:52,485 - INFO - [app.py:228] - Starting GrabCut Flask application
+2025-05-13 23:18:52,620 - WARNING - [_internal.py:96] -  * Debugger is active!
+2025-05-13 23:18:52,658 - INFO - [_internal.py:96] -  * Debugger PIN: 269-075-099
+2025-05-13 23:19:05,695 - INFO - [app.py:121] - Index page requested
+2025-05-13 23:19:05,722 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:19:05] "GET / HTTP/1.1" 200 -
+2025-05-13 23:19:19,812 - INFO - [app.py:126] - Processing request received
+2025-05-13 23:19:19,817 - DEBUG - [app.py:138] - Processing image with rectangle: [302, 102, 371, 102]
+2025-05-13 23:19:19,817 - DEBUG - [app.py:139] - Result type: normal
+2025-05-13 23:19:19,817 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:19:19,824 - DEBUG - [app.py:57] - Rectangle coordinates: [302, 102, 371, 102]
+2025-05-13 23:19:19,840 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:19:19,906 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:19:19,906 - DEBUG - [app.py:69] - Initializing mask
+2025-05-13 23:19:19,906 - DEBUG - [app.py:73] - Initializing GrabCut models
+2025-05-13 23:19:19,906 - INFO - [app.py:78] - Running GrabCut algorithm
+2025-05-13 23:19:20,457 - DEBUG - [app.py:89] - GrabCut completed successfully
+2025-05-13 23:19:20,474 - DEBUG - [app.py:96] - Creating binary mask
+2025-05-13 23:19:20,493 - DEBUG - [app.py:100] - Creating normal result
+2025-05-13 23:19:20,493 - INFO - [app.py:111] - Image processing completed successfully
+2025-05-13 23:19:20,509 - INFO - [app.py:154] - Processing completed successfully
+2025-05-13 23:19:20,509 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:19:20] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:19:36,184 - INFO - [app.py:126] - Processing request received
+2025-05-13 23:19:36,184 - DEBUG - [app.py:138] - Processing image with rectangle: [149, 179, 249, 116]
+2025-05-13 23:19:36,184 - DEBUG - [app.py:139] - Result type: normal
+2025-05-13 23:19:36,184 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:19:36,184 - DEBUG - [app.py:57] - Rectangle coordinates: [149, 179, 249, 116]
+2025-05-13 23:19:36,184 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:19:36,202 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:19:36,202 - DEBUG - [app.py:69] - Initializing mask
+2025-05-13 23:19:36,202 - DEBUG - [app.py:73] - Initializing GrabCut models
+2025-05-13 23:19:36,202 - INFO - [app.py:78] - Running GrabCut algorithm
+2025-05-13 23:19:37,334 - DEBUG - [app.py:89] - GrabCut completed successfully
+2025-05-13 23:19:37,334 - DEBUG - [app.py:96] - Creating binary mask
+2025-05-13 23:19:37,334 - DEBUG - [app.py:100] - Creating normal result
+2025-05-13 23:19:37,334 - INFO - [app.py:111] - Image processing completed successfully
+2025-05-13 23:19:37,334 - INFO - [app.py:154] - Processing completed successfully
+2025-05-13 23:19:37,334 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:19:37] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:19:47,683 - INFO - [app.py:126] - Processing request received
+2025-05-13 23:19:47,683 - DEBUG - [app.py:138] - Processing image with rectangle: [356, 363, 230, 99]
+2025-05-13 23:19:47,683 - DEBUG - [app.py:139] - Result type: normal
+2025-05-13 23:19:47,683 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:19:47,683 - DEBUG - [app.py:57] - Rectangle coordinates: [356, 363, 230, 99]
+2025-05-13 23:19:47,696 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:19:47,696 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:19:47,696 - DEBUG - [app.py:69] - Initializing mask
+2025-05-13 23:19:47,696 - DEBUG - [app.py:73] - Initializing GrabCut models
+2025-05-13 23:19:47,715 - INFO - [app.py:78] - Running GrabCut algorithm
+2025-05-13 23:19:47,735 - ERROR - [app.py:91] - GrabCut failed: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\matrix.cpp:809: error: (-215:Assertion failed) 0 <= roi.x && 0 <= roi.width && roi.x + roi.width <= m.cols && 0 <= roi.y && 0 <= roi.height && roi.y + roi.height <= m.rows in function 'cv::Mat::Mat'
+
+2025-05-13 23:19:47,737 - ERROR - [app.py:92] - Traceback: Traceback (most recent call last):
+  File "D:\Python_practs\IPV\IPV Project\app.py", line 80, in process_image
+    cv2.grabCut(
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\matrix.cpp:809: error: (-215:Assertion failed) 0 <= roi.x && 0 <= roi.width && roi.x + roi.width <= m.cols && 0 <= roi.y && 0 <= roi.height && roi.y + roi.height <= m.rows in function 'cv::Mat::Mat'
+
+
+2025-05-13 23:19:47,737 - ERROR - [app.py:144] - Error in process_image: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\matrix.cpp:809: error: (-215:Assertion failed) 0 <= roi.x && 0 <= roi.width && roi.x + roi.width <= m.cols && 0 <= roi.y && 0 <= roi.height && roi.y + roi.height <= m.rows in function 'cv::Mat::Mat'
+
+2025-05-13 23:19:47,737 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:19:47] "[35m[1mPOST /process HTTP/1.1[0m" 500 -
+2025-05-13 23:19:51,883 - INFO - [app.py:126] - Processing request received
+2025-05-13 23:19:51,894 - DEBUG - [app.py:138] - Processing image with rectangle: [356, 363, 230, 99]
+2025-05-13 23:19:51,894 - DEBUG - [app.py:139] - Result type: normal
+2025-05-13 23:19:51,894 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:19:51,894 - DEBUG - [app.py:57] - Rectangle coordinates: [356, 363, 230, 99]
+2025-05-13 23:19:51,894 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:19:51,911 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:19:51,911 - DEBUG - [app.py:69] - Initializing mask
+2025-05-13 23:19:51,911 - DEBUG - [app.py:73] - Initializing GrabCut models
+2025-05-13 23:19:51,911 - INFO - [app.py:78] - Running GrabCut algorithm
+2025-05-13 23:19:51,928 - ERROR - [app.py:91] - GrabCut failed: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\matrix.cpp:809: error: (-215:Assertion failed) 0 <= roi.x && 0 <= roi.width && roi.x + roi.width <= m.cols && 0 <= roi.y && 0 <= roi.height && roi.y + roi.height <= m.rows in function 'cv::Mat::Mat'
+
+2025-05-13 23:19:51,928 - ERROR - [app.py:92] - Traceback: Traceback (most recent call last):
+  File "D:\Python_practs\IPV\IPV Project\app.py", line 80, in process_image
+    cv2.grabCut(
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\matrix.cpp:809: error: (-215:Assertion failed) 0 <= roi.x && 0 <= roi.width && roi.x + roi.width <= m.cols && 0 <= roi.y && 0 <= roi.height && roi.y + roi.height <= m.rows in function 'cv::Mat::Mat'
+
+
+2025-05-13 23:19:51,928 - ERROR - [app.py:144] - Error in process_image: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\matrix.cpp:809: error: (-215:Assertion failed) 0 <= roi.x && 0 <= roi.width && roi.x + roi.width <= m.cols && 0 <= roi.y && 0 <= roi.height && roi.y + roi.height <= m.rows in function 'cv::Mat::Mat'
+
+2025-05-13 23:19:51,928 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:19:51] "[35m[1mPOST /process HTTP/1.1[0m" 500 -
+2025-05-13 23:20:19,538 - INFO - [app.py:126] - Processing request received
+2025-05-13 23:20:19,551 - DEBUG - [app.py:138] - Processing image with rectangle: [92, 527, 221, 108]
+2025-05-13 23:20:19,551 - DEBUG - [app.py:139] - Result type: normal
+2025-05-13 23:20:19,551 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:20:19,551 - DEBUG - [app.py:57] - Rectangle coordinates: [92, 527, 221, 108]
+2025-05-13 23:20:19,551 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:20:19,568 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:20:19,568 - DEBUG - [app.py:69] - Initializing mask
+2025-05-13 23:20:19,568 - DEBUG - [app.py:73] - Initializing GrabCut models
+2025-05-13 23:20:19,568 - INFO - [app.py:78] - Running GrabCut algorithm
+2025-05-13 23:20:19,568 - ERROR - [app.py:91] - GrabCut failed: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\matrix.cpp:809: error: (-215:Assertion failed) 0 <= roi.x && 0 <= roi.width && roi.x + roi.width <= m.cols && 0 <= roi.y && 0 <= roi.height && roi.y + roi.height <= m.rows in function 'cv::Mat::Mat'
+
+2025-05-13 23:20:19,568 - ERROR - [app.py:92] - Traceback: Traceback (most recent call last):
+  File "D:\Python_practs\IPV\IPV Project\app.py", line 80, in process_image
+    cv2.grabCut(
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\matrix.cpp:809: error: (-215:Assertion failed) 0 <= roi.x && 0 <= roi.width && roi.x + roi.width <= m.cols && 0 <= roi.y && 0 <= roi.height && roi.y + roi.height <= m.rows in function 'cv::Mat::Mat'
+
+
+2025-05-13 23:20:19,568 - ERROR - [app.py:144] - Error in process_image: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\matrix.cpp:809: error: (-215:Assertion failed) 0 <= roi.x && 0 <= roi.width && roi.x + roi.width <= m.cols && 0 <= roi.y && 0 <= roi.height && roi.y + roi.height <= m.rows in function 'cv::Mat::Mat'
+
+2025-05-13 23:20:19,585 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:20:19] "[35m[1mPOST /process HTTP/1.1[0m" 500 -
+2025-05-13 23:20:59,137 - INFO - [_internal.py:96] -  * Detected change in 'D:\\Python_practs\\IPV\\IPV Project\\app.py', reloading

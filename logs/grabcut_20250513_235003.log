@@ -1,0 +1,5 @@
+2025-05-13 23:50:03,310 - INFO - [app.py:45] - Upload directory created/verified at: static/uploads
+2025-05-13 23:50:03,313 - INFO - [app.py:238] - Starting GrabCut Flask application
+2025-05-13 23:50:03,326 - WARNING - [_internal.py:96] -  * Debugger is active!
+2025-05-13 23:50:03,360 - INFO - [_internal.py:96] -  * Debugger PIN: 269-075-099
+2025-05-13 23:50:59,122 - INFO - [_internal.py:96] -  * Detected change in 'D:\\Python_practs\\IPV\\IPV Project\\app.py', reloading

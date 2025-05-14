@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}IPV Project{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    {% block styles %}{% endblock %}
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="{{ url_for('index') }}" class="text-xl font-bold text-gray-800">IPV Project</a>
+                <div class="space-x-4">
+                    <a href="{{ url_for('index') }}" class="{{ 'text-blue-600' if request.endpoint == 'index' else 'text-gray-600 hover:text-blue-600' }}">Home</a>
+                    <a href="{{ url_for('grabcut.index') }}" class="{{ 'text-blue-600' if request.endpoint and request.endpoint.startswith('grabcut.') else 'text-gray-600 hover:text-blue-600' }}">GrabCut</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-gray-100 py-6 mt-8">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p>© 2025 IPV Project</p>
+        </div>
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

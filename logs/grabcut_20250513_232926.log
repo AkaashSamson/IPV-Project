@@ -1,0 +1,39 @@
+2025-05-13 23:29:26,227 - INFO - [app.py:45] - Upload directory created/verified at: static/uploads
+2025-05-13 23:29:26,227 - INFO - [app.py:247] - Starting GrabCut Flask application
+2025-05-13 23:29:26,259 - WARNING - [_internal.py:96] -  * Debugger is active!
+2025-05-13 23:29:26,276 - INFO - [_internal.py:96] -  * Debugger PIN: 269-075-099
+2025-05-13 23:29:42,388 - INFO - [app.py:140] - Index page requested
+2025-05-13 23:29:42,407 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:29:42] "GET / HTTP/1.1" 200 -
+2025-05-13 23:29:55,916 - INFO - [app.py:145] - Processing request received
+2025-05-13 23:29:55,932 - DEBUG - [app.py:157] - Processing image with rectangle: [374, 260, 207, 104]
+2025-05-13 23:29:55,932 - DEBUG - [app.py:158] - Result type: normal
+2025-05-13 23:29:55,932 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:29:55,932 - DEBUG - [app.py:57] - Rectangle coordinates: [374, 260, 207, 104]
+2025-05-13 23:29:55,932 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:29:55,998 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (800, 800, 3)
+2025-05-13 23:29:55,998 - ERROR - [app.py:134] - Error in process_image: name 'self' is not defined
+2025-05-13 23:29:55,998 - ERROR - [app.py:135] - Traceback: Traceback (most recent call last):
+  File "D:\Python_practs\IPV\IPV Project\app.py", line 79, in process_image
+    orig_x1 = int(x / self.scale_factor)
+                      ^^^^
+NameError: name 'self' is not defined
+
+2025-05-13 23:29:55,998 - ERROR - [app.py:163] - Error in process_image: name 'self' is not defined
+2025-05-13 23:29:56,014 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:29:55] "[35m[1mPOST /process HTTP/1.1[0m" 500 -
+2025-05-13 23:30:06,328 - INFO - [app.py:145] - Processing request received
+2025-05-13 23:30:06,338 - DEBUG - [app.py:157] - Processing image with rectangle: [286, 80, 364, 128]
+2025-05-13 23:30:06,338 - DEBUG - [app.py:158] - Result type: normal
+2025-05-13 23:30:06,345 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:30:06,345 - DEBUG - [app.py:57] - Rectangle coordinates: [286, 80, 364, 128]
+2025-05-13 23:30:06,345 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:30:06,378 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (800, 800, 3)
+2025-05-13 23:30:06,378 - ERROR - [app.py:134] - Error in process_image: name 'self' is not defined
+2025-05-13 23:30:06,378 - ERROR - [app.py:135] - Traceback: Traceback (most recent call last):
+  File "D:\Python_practs\IPV\IPV Project\app.py", line 79, in process_image
+    orig_x1 = int(x / self.scale_factor)
+                      ^^^^
+NameError: name 'self' is not defined
+
+2025-05-13 23:30:06,378 - ERROR - [app.py:163] - Error in process_image: name 'self' is not defined
+2025-05-13 23:30:06,378 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:30:06] "[35m[1mPOST /process HTTP/1.1[0m" 500 -
+2025-05-13 23:30:53,687 - INFO - [_internal.py:96] -  * Detected change in 'D:\\Python_practs\\IPV\\IPV Project\\app.py', reloading

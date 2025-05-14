@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&W Image Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .canvas-container {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            position: relative;
+            margin-bottom: 24px;
+            max-height: 500px;
+            display: flex;
+            justify-content: center;
+        }
+        canvas {
+            max-width: 100%;
+            max-height: 500px;
+        }
+        .result-image {
+            max-width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background-color: #f5f5f5;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .result-image img {
+            max-width: 100%;
+            max-height: 500px;
+        }
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .sidebar {
+            width: 300px;
+            transition: width 0.3s;
+        }
+        .sidebar.collapsed {
+            width: 60px;
+        }
+        .main-content {
+            transition: margin-left 0.3s;
+        }
+        .main-content.expanded {
+            margin-left: 60px;
+        }
+        .sidebar-toggle {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .sidebar.collapsed .sidebar-header span,
+        .sidebar.collapsed .sidebar-content {
+            display: none;
+        }
+        .method-card {
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .method-card.selected {
+            border: 2px solid #3B82F6;
+            background-color: #EFF6FF;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="bg-white p-5 rounded-lg shadow-lg flex flex-col items-center">
+            <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mb-4"></div>
+            <p class="text-lg font-medium">Processing...</p>
+        </div>
+    </div>
+
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar bg-gray-800 text-white p-4 h-full flex flex-col">
+            <div class="sidebar-header flex items-center justify-between mb-6">
+                <h1 class="text-xl font-bold">B&W Converter</h1>
+                <i id="sidebarToggle" class="sidebar-toggle fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="sidebar-content flex-grow overflow-y-auto">
+                <div class="mb-6">
+                    <h2 class="text-lg font-medium mb-3">1. Upload Image</h2>
+                    <input id="imageInput" type="file" accept="image/*" class="hidden">
+                    <button onclick="document.getElementById('imageInput').click()" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                        Select Image
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <h2 class="text-lg font-medium mb-3">2. Choose Method</h2>
+                    <div class="space-y-3">
+                        <div id="methodLuminosity" class="method-card bg-gray-700 p-3 rounded selected">
+                            <h3 class="font-medium">Luminosity (BT.709)</h3>
+                            <p class="text-sm text-gray-400">The perceptual standard - weighted RGB channels</p>
+                        </div>
+                        <div id="methodAverage" class="method-card bg-gray-700 p-3 rounded">
+                            <h3 class="font-medium">Average</h3>
+                            <p class="text-sm text-gray-400">Simple average of RGB channels</p>
+                        </div>
+                        <div id="methodLightness" class="method-card bg-gray-700 p-3 rounded">
+                            <h3 class="font-medium">Lightness</h3>
+                            <p class="text-sm text-gray-400">Average of min and max RGB values</p>
+                        </div>
+                        <div id="methodGreen" class="method-card bg-gray-700 p-3 rounded">
+                            <h3 class="font-medium">Green Channel</h3>
+                            <p class="text-sm text-gray-400">Extract only the green channel</p>
+                        </div>
+                        <div id="methodLuma" class="method-card bg-gray-700 p-3 rounded">
+                            <h3 class="font-medium">Luma (BT.601)</h3>
+                            <p class="text-sm text-gray-400">Classic video standard weights</p>
+                        </div>
+                        <div id="methodCustom" class="method-card bg-gray-700 p-3 rounded">
+                            <h3 class="font-medium">Custom</h3>
+                            <p class="text-sm text-gray-400">Custom weights for RGB channels</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <h2 class="text-lg font-medium mb-3">3. Convert Image</h2>
+                    <button id="convertBtn" disabled class="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">
+                        Convert to B&W
+                    </button>
+                </div>
+                
+                <div>
+                    <h2 class="text-lg font-medium mb-3">4. Save Result</h2>
+                    <button id="saveBtn" disabled class="w-full bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded">
+                        Save Image
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div id="mainContent" class="main-content flex-grow p-8 overflow-y-auto">
+            <h1 class="text-3xl font-bold mb-8 text-center">RGB to Grayscale Converter</h1>
+            
+            <!-- Status Message -->
+            <div id="status" class="text-gray-700 mt-2 text-center mb-4"></div>
+            
+            <!-- Images Container - Now stacked vertically -->
+            <div class="flex flex-col mb-8">
+                <!-- Original Image -->
+                <div>
+                    <h2 class="text-xl font-medium mb-3">Original Image</h2>
+                    <div class="canvas-container">
+                        <canvas id="originalCanvas"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Result Image -->
+                <div>
+                    <h2 class="text-xl font-medium mb-3">Grayscale Result</h2>
+                    <div class="result-image">
+                        <img id="resultImage" style="display: none;" alt="B&W Result">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Method Description -->
+            <div class="bg-white p-6 rounded-lg shadow mb-8">
+                <h2 class="text-xl font-medium mb-3">About the Method</h2>
+                <div id="methodDescription" class="prose">
+                    <p class="text-gray-700">
+                        The <strong>Luminosity Method (BT.709)</strong> is the industry standard for converting RGB to grayscale. It applies different weights to each color channel based on human perception:
+                    </p>
+                    <pre class="bg-gray-100 p-2 rounded mt-2">Grayscale = 0.2989 * R + 0.5870 * G + 0.1140 * B</pre>
+                    <p class="text-gray-700 mt-2">
+                        This method recognizes that the human eye is most sensitive to green light, followed by red, and then blue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/bw_converter.js"></script>
+</body>
+</html>

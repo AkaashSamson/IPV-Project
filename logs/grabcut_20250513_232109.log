@@ -1,0 +1,268 @@
+2025-05-13 23:21:09,767 - INFO - [app.py:45] - Upload directory created/verified at: static/uploads
+2025-05-13 23:21:09,795 - INFO - [app.py:241] - Starting GrabCut Flask application
+2025-05-13 23:21:09,933 - WARNING - [_internal.py:96] -  * Debugger is active!
+2025-05-13 23:21:09,958 - INFO - [_internal.py:96] -  * Debugger PIN: 269-075-099
+2025-05-13 23:21:12,044 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:21:12,051 - DEBUG - [app.py:151] - Processing image with rectangle: [92, 527, 221, 108]
+2025-05-13 23:21:12,053 - DEBUG - [app.py:152] - Result type: bw_background
+2025-05-13 23:21:12,053 - INFO - [app.py:56] - Starting image processing with result_type: bw_background
+2025-05-13 23:21:12,055 - DEBUG - [app.py:57] - Rectangle coordinates: [92, 527, 221, 108]
+2025-05-13 23:21:12,055 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:21:12,072 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:21:12,073 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (92, 358, 221, 1)
+2025-05-13 23:21:12,074 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:21:12,074 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:21:12,074 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:21:12,765 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:21:12,772 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:21:12,782 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:21:12,782 - DEBUG - [app.py:120] - Creating B&W background result
+2025-05-13 23:21:12,818 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:21:12,833 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:21:12,833 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:21:12] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:21:19,872 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:21:19,877 - DEBUG - [app.py:151] - Processing image with rectangle: [466, 357, 159, 133]
+2025-05-13 23:21:19,877 - DEBUG - [app.py:152] - Result type: bw_background
+2025-05-13 23:21:19,877 - INFO - [app.py:56] - Starting image processing with result_type: bw_background
+2025-05-13 23:21:19,877 - DEBUG - [app.py:57] - Rectangle coordinates: [466, 357, 159, 133]
+2025-05-13 23:21:19,877 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:21:19,877 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:21:19,895 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (358, 357, 1, 2)
+2025-05-13 23:21:19,895 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:21:19,895 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:21:19,895 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:21:20,427 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:21:20,427 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:21:20,427 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:21:20,427 - DEBUG - [app.py:120] - Creating B&W background result
+2025-05-13 23:21:20,427 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:21:20,455 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:21:20,459 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:21:20] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:21:28,578 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:21:28,590 - DEBUG - [app.py:151] - Processing image with rectangle: [387, 258, 198, 113]
+2025-05-13 23:21:28,593 - DEBUG - [app.py:152] - Result type: bw_background
+2025-05-13 23:21:28,593 - INFO - [app.py:56] - Starting image processing with result_type: bw_background
+2025-05-13 23:21:28,593 - DEBUG - [app.py:57] - Rectangle coordinates: [387, 258, 198, 113]
+2025-05-13 23:21:28,593 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:21:28,593 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:21:28,609 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (358, 258, 1, 101)
+2025-05-13 23:21:28,609 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:21:28,609 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:21:28,609 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:21:29,107 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:21:29,107 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:21:29,107 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:21:29,124 - DEBUG - [app.py:120] - Creating B&W background result
+2025-05-13 23:21:29,124 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:21:29,141 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:21:29,141 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:21:29] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:21:45,865 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:21:45,868 - DEBUG - [app.py:151] - Processing image with rectangle: [387, 258, 198, 113]
+2025-05-13 23:21:45,868 - DEBUG - [app.py:152] - Result type: normal
+2025-05-13 23:21:45,877 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:21:45,880 - DEBUG - [app.py:57] - Rectangle coordinates: [387, 258, 198, 113]
+2025-05-13 23:21:45,902 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:21:45,918 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:21:45,924 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (358, 258, 1, 101)
+2025-05-13 23:21:45,926 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:21:45,926 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:21:45,926 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:21:46,377 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:21:46,377 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:21:46,387 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:21:46,387 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:21:46,387 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:21:46,414 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:21:46] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:21:51,582 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:21:51,583 - DEBUG - [app.py:151] - Processing image with rectangle: [653, 439, 272, 275]
+2025-05-13 23:21:51,589 - DEBUG - [app.py:152] - Result type: normal
+2025-05-13 23:21:51,589 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:21:51,589 - DEBUG - [app.py:57] - Rectangle coordinates: [653, 439, 272, 275]
+2025-05-13 23:21:51,589 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:21:51,601 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:21:51,601 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (358, 358, 1, 1)
+2025-05-13 23:21:51,601 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:21:51,616 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:21:51,616 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:21:52,049 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:21:52,049 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:21:52,049 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:21:52,049 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:21:52,049 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:21:52,049 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:21:52] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:21:56,016 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:21:56,024 - DEBUG - [app.py:151] - Processing image with rectangle: [653, 439, 272, 275]
+2025-05-13 23:21:56,025 - DEBUG - [app.py:152] - Result type: bw_background
+2025-05-13 23:21:56,026 - INFO - [app.py:56] - Starting image processing with result_type: bw_background
+2025-05-13 23:21:56,033 - DEBUG - [app.py:57] - Rectangle coordinates: [653, 439, 272, 275]
+2025-05-13 23:21:56,034 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:21:56,043 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:21:56,048 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (358, 358, 1, 1)
+2025-05-13 23:21:56,050 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:21:56,051 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:21:56,053 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:21:56,430 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:21:56,430 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:21:56,430 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:21:56,430 - DEBUG - [app.py:120] - Creating B&W background result
+2025-05-13 23:21:56,430 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:21:56,448 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:21:56,448 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:21:56] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:22:52,966 - INFO - [app.py:134] - Index page requested
+2025-05-13 23:22:52,978 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:22:52] "GET / HTTP/1.1" 200 -
+2025-05-13 23:23:04,560 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:23:04,560 - DEBUG - [app.py:151] - Processing image with rectangle: [265, 105, 408, 96]
+2025-05-13 23:23:04,560 - DEBUG - [app.py:152] - Result type: normal
+2025-05-13 23:23:04,560 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:23:04,560 - DEBUG - [app.py:57] - Rectangle coordinates: [265, 105, 408, 96]
+2025-05-13 23:23:04,560 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:23:04,573 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:23:04,573 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (265, 105, 94, 96)
+2025-05-13 23:23:04,577 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:23:04,578 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:23:04,578 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:23:05,271 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:23:05,288 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:23:05,288 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:23:05,305 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:23:05,321 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:23:05,338 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:23:05] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:23:11,008 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:23:11,008 - DEBUG - [app.py:151] - Processing image with rectangle: [265, 105, 408, 96]
+2025-05-13 23:23:11,008 - DEBUG - [app.py:152] - Result type: bw_background
+2025-05-13 23:23:11,017 - INFO - [app.py:56] - Starting image processing with result_type: bw_background
+2025-05-13 23:23:11,021 - DEBUG - [app.py:57] - Rectangle coordinates: [265, 105, 408, 96]
+2025-05-13 23:23:11,022 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:23:11,022 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:23:11,035 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (265, 105, 94, 96)
+2025-05-13 23:23:11,035 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:23:11,035 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:23:11,035 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:23:11,576 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:23:11,576 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:23:11,576 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:23:11,587 - DEBUG - [app.py:120] - Creating B&W background result
+2025-05-13 23:23:11,587 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:23:11,603 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:23:11,603 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:23:11] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:23:17,953 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:23:17,953 - DEBUG - [app.py:151] - Processing image with rectangle: [81, 283, 278, 130]
+2025-05-13 23:23:17,953 - DEBUG - [app.py:152] - Result type: bw_background
+2025-05-13 23:23:17,953 - INFO - [app.py:56] - Starting image processing with result_type: bw_background
+2025-05-13 23:23:17,953 - DEBUG - [app.py:57] - Rectangle coordinates: [81, 283, 278, 130]
+2025-05-13 23:23:17,953 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:23:17,969 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:23:17,969 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (81, 283, 278, 76)
+2025-05-13 23:23:17,969 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:23:17,969 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:23:17,969 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:23:19,045 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:23:19,050 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:23:19,050 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:23:19,050 - DEBUG - [app.py:120] - Creating B&W background result
+2025-05-13 23:23:19,050 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:23:19,061 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:23:19,084 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:23:19] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:23:23,197 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:23:23,199 - DEBUG - [app.py:151] - Processing image with rectangle: [81, 283, 278, 130]
+2025-05-13 23:23:23,199 - DEBUG - [app.py:152] - Result type: normal
+2025-05-13 23:23:23,214 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:23:23,230 - DEBUG - [app.py:57] - Rectangle coordinates: [81, 283, 278, 130]
+2025-05-13 23:23:23,230 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:23:23,264 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:23:23,274 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (81, 283, 278, 76)
+2025-05-13 23:23:23,274 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:23:23,274 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:23:23,281 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:23:24,415 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:23:24,416 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:23:24,417 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:23:24,417 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:23:24,417 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:23:24,417 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:23:24] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:23:32,091 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:23:32,097 - DEBUG - [app.py:151] - Processing image with rectangle: [16, 34, 394, 170]
+2025-05-13 23:23:32,097 - DEBUG - [app.py:152] - Result type: normal
+2025-05-13 23:23:32,097 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:23:32,097 - DEBUG - [app.py:57] - Rectangle coordinates: [16, 34, 394, 170]
+2025-05-13 23:23:32,097 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:23:32,111 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:23:32,111 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (16, 34, 343, 170)
+2025-05-13 23:23:32,111 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:23:32,111 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:23:32,111 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:23:33,460 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:23:33,470 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:23:33,470 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:23:33,470 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:23:33,477 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:23:33,477 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:23:33] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:23:41,476 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:23:41,476 - DEBUG - [app.py:151] - Processing image with rectangle: [489, 71, 162, 150]
+2025-05-13 23:23:41,476 - DEBUG - [app.py:152] - Result type: normal
+2025-05-13 23:23:41,476 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:23:41,490 - DEBUG - [app.py:57] - Rectangle coordinates: [489, 71, 162, 150]
+2025-05-13 23:23:41,490 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:23:41,490 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:23:41,490 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (358, 71, 1, 150)
+2025-05-13 23:23:41,490 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:23:41,490 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:23:41,490 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:23:42,074 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:23:42,074 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:23:42,074 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:23:42,074 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:23:42,074 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:23:42,074 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:23:42] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:23:49,361 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:23:49,370 - DEBUG - [app.py:151] - Processing image with rectangle: [115, 414, 201, 94]
+2025-05-13 23:23:49,370 - DEBUG - [app.py:152] - Result type: normal
+2025-05-13 23:23:49,370 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:23:49,370 - DEBUG - [app.py:57] - Rectangle coordinates: [115, 414, 201, 94]
+2025-05-13 23:23:49,370 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:23:49,389 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:23:49,389 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (115, 358, 201, 1)
+2025-05-13 23:23:49,393 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:23:49,393 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:23:49,393 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:23:49,820 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:23:49,820 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:23:49,820 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:23:49,820 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:23:49,834 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:23:49,837 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:23:49] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:24:01,737 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:24:01,749 - DEBUG - [app.py:151] - Processing image with rectangle: [387, 255, 190, 108]
+2025-05-13 23:24:01,749 - DEBUG - [app.py:152] - Result type: normal
+2025-05-13 23:24:01,749 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:24:01,749 - DEBUG - [app.py:57] - Rectangle coordinates: [387, 255, 190, 108]
+2025-05-13 23:24:01,749 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:24:01,749 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:24:01,767 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (358, 255, 1, 104)
+2025-05-13 23:24:01,767 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:24:01,767 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:24:01,767 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:24:02,228 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:24:02,228 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:24:02,228 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:24:02,233 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:24:02,235 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:24:02,235 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:24:02] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:25:14,322 - INFO - [app.py:139] - Processing request received
+2025-05-13 23:25:14,330 - DEBUG - [app.py:151] - Processing image with rectangle: [489, 54, 397, 570]
+2025-05-13 23:25:14,330 - DEBUG - [app.py:152] - Result type: normal
+2025-05-13 23:25:14,330 - INFO - [app.py:56] - Starting image processing with result_type: normal
+2025-05-13 23:25:14,330 - DEBUG - [app.py:57] - Rectangle coordinates: [489, 54, 397, 570]
+2025-05-13 23:25:14,330 - DEBUG - [app.py:61] - Converting base64 to numpy array
+2025-05-13 23:25:14,342 - DEBUG - [app.py:66] - Image loaded successfully. Shape: (359, 359, 3)
+2025-05-13 23:25:14,342 - DEBUG - [app.py:79] - Adjusted rectangle coordinates: (358, 54, 1, 305)
+2025-05-13 23:25:14,342 - DEBUG - [app.py:82] - Initializing mask
+2025-05-13 23:25:14,342 - DEBUG - [app.py:86] - Initializing GrabCut models
+2025-05-13 23:25:14,342 - INFO - [app.py:91] - Running GrabCut algorithm
+2025-05-13 23:25:14,830 - DEBUG - [app.py:102] - GrabCut completed successfully
+2025-05-13 23:25:14,830 - DEBUG - [app.py:109] - Creating binary mask
+2025-05-13 23:25:14,830 - DEBUG - [app.py:113] - Creating normal result
+2025-05-13 23:25:14,830 - INFO - [app.py:124] - Image processing completed successfully
+2025-05-13 23:25:14,839 - INFO - [app.py:167] - Processing completed successfully
+2025-05-13 23:25:14,839 - INFO - [_internal.py:96] - 127.0.0.1 - - [13/May/2025 23:25:14] "POST /process HTTP/1.1" 200 -
+2025-05-13 23:28:13,548 - INFO - [_internal.py:96] -  * Detected change in 'D:\\Python_practs\\IPV\\IPV Project\\app.py', reloading
