@@ -1,54 +1,34 @@
-# GrabCut Image Segmentation Web App
+# IPV Project - Image Processing Tools
 
-A modern web application for image segmentation using OpenCV's GrabCut algorithm. This application allows users to upload images, draw bounding boxes around objects, and perform segmentation with a beautiful, user-friendly interface.
+A comprehensive web application featuring various image processing tools implemented with Flask and OpenCV. This project provides a user-friendly interface for different computer vision techniques.
 
-## Features
+## Available Tools
 
-- Modern, responsive UI built with Tailwind CSS
-- Real-time bounding box drawing
+### GrabCut Segmentation
+- Extract objects from images by drawing a bounding box
 - Two segmentation modes:
   - Normal segmentation
   - Colored foreground with black and white background
 - Automatic mask generation
 - Save both segmentation result and mask
-- Loading indicators and error handling
-- Mobile-friendly design
 
-## Setup
+### B&W Converter
+- Transform color images to grayscale using various techniques:
+  - Luminosity (BT.709)
+  - Average
+  - Lightness
+  - Green Channel
+  - Luma (BT.601)
+  - Custom weights
 
-1. Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+## Requirements
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the application:
-```bash
-python app.py
-```
-
-4. Open your browser and navigate to `http://localhost:5000`
-
-## Usage
-
-1. Click "Choose Image" to upload an image
-2. Draw a rectangle around the object you want to segment by clicking and dragging
-3. Click "Run GrabCut" to perform the segmentation
-4. Choose between normal segmentation or colored foreground with BW background
-5. Click "Save Result" to save both the segmentation result and mask
-6. Use "Reset" to start over with the same image
-
-## Technical Details
-
-- Backend: Flask
-- Frontend: HTML5, JavaScript, Tailwind CSS
-- Image Processing: OpenCV (cv2)
-- File Handling: Pillow (PIL)
+- Python 3.11+
+- Flask 3.0.2
+- OpenCV 4.9.0.80
+- NumPy 1.26.4
+- PIL (Pillow) 10.2.0
+- Werkzeug 3.0.1
 
 ## Project Structure
 
