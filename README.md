@@ -1,11 +1,11 @@
-# IPV Project - Image Processing Tools
+# IPV Project - Foreground Segmentation Tool
 
-A comprehensive web application featuring various image processing tools implemented with Flask and OpenCV. This project provides a user-friendly interface for different computer vision techniques.
+A focused image processing application built with Flask and OpenCV that specializes in foreground object extraction and background manipulation. This tool provides a straightforward interface for separating image foregrounds from backgrounds.
 
-## Available Tools
+## Core Functionality
 
 ### GrabCut Segmentation
-- Extract objects from images by drawing a bounding box
+- Extract foreground objects from images by drawing a bounding box
 - Two segmentation modes:
   - Normal segmentation
   - Colored foreground with black and white background
@@ -13,7 +13,7 @@ A comprehensive web application featuring various image processing tools impleme
 - Save both segmentation result and mask
 
 ### B&W Converter
-- Transform color images to grayscale using various techniques:
+- Transform backgrounds to grayscale using various techniques:
   - Luminosity (BT.709)
   - Average
   - Lightness
